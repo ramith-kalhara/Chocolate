@@ -1,0 +1,120 @@
+
+
+
+
+// Colors
+$greenSeaweed: rgb(144, 101, 2);
+$blueQueen: rgb(144, 110, 69);
+$redFire: rgb(244, 175, 91);
+
+// Fonts
+$fontAsap: 'Asap', sans-serif;
+
+
+
+.login {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba($greenSeaweed, 0.2);
+
+  box-shadow: 5px 10px 10px rgba($greenSeaweed, 0.2);
+
+  
+  .chocotitle {
+    font-family: 'Asap', sans-serif;
+    font-size: 35px;
+    color: #333; // Specify your desired color
+    margin-bottom: 20px;
+  }
+
+  @keyframes wawes {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 780px;
+    height: 780px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+  }
+  
+  &::before {
+    left: 28%;
+    bottom: -130%;
+    background-color: rgba($blueQueen, 0.15);
+    animation: wawes 6s infinite linear; 
+  }
+  
+  
+  &::after {
+    left: 22%;
+    bottom: -125%;
+    background-color: rgba($greenSeaweed, 0.2);
+    animation: wawes 7s infinite;
+    
+  }
+  
+  > input {
+    font-family: $fontAsap;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 15px -10px;
+  }
+ 
+  
+  > button {
+  font-family: $fontAsap;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: $redFire;
+  transition: background-color 300ms; // Use the CSS transition property directly
+
+  &:hover {
+    background-color: darken($redFire, 5%);
+  }
+
+  
+}
+
+}
+
+
+
+.some-selector {
+  animation: wawes 2s infinite; // Example usage of the keyframes
+}
+
+
