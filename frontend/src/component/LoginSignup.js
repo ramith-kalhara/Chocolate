@@ -96,19 +96,21 @@ const LoginSignup = () => {
     formData.append("password", password);
 
     axios
-      .post("http://localhost:8080/User/add", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      })
-      .then(() => {
-        alert("User Added");
-        console.log("user add");
-      })
-      .catch((err) => {
-        console.error("Error adding user:", err);
-        alert("Error adding user. Check the console for details.");
-      });
+    .post("http://localhost:8080/user/add", {
+      name: name,
+      email: email,
+      tp_number: telephone,
+      password: password
+    })
+    .then(() => {
+      alert("User Added");
+      console.log("User added");
+    })
+    .catch((err) => {
+      console.error("Error adding user:", err);
+      alert("Error adding user. Check the console for details.");
+    });
+
   }
   return (
     <div class="loginSignupbg">

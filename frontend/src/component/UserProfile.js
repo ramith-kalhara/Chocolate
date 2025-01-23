@@ -56,57 +56,57 @@ const UserProfile = () => {
   return (
     <div>
       <Header />
-      <section class="section about-section gray-bg" id="about">
-        <div class="container">
-          <div class="row align-items-center flex-row-reverse">
-            <div class="col-lg-6">
-              <div class="about-text go-to">
-                <h3 class="dark-color">About Me</h3>
-                <h6 class="theme-color lead">
+      <section className="section about-section gray-bg" id="about">
+        <div className="container">
+          <div className="row align-items-center flex-row-reverse">
+            <div className="col-lg-6">
+              <div className="about-text go-to">
+                <h3 className="dark-color">About Me</h3>
+                <h6 className="theme-color lead">
                   Welcome  {user.name}
                 </h6>
 
-                <div class="row about-list">
-                  <div class="col-md-6">
-                    <div class="media">
+                <div className="row about-list">
+                  <div className="col-md-6">
+                    <div className="media">
                       <label>Name</label>
                       <p>
                       {user.name}
                       </p>
                     </div>
-                    <div class="media">
+                    <div className="media">
                       <label>Email</label>
                       <p>
                       {user.email}
                       </p>
                     </div>
-                    <div class="media">
+                    <div className="media">
                       <label>Address</label>
                       <p>
                       {user.address}
                       </p>
                     </div>
-                    <div class="media">
+                    <div className="media">
                       <label>NIC</label>
                       <p>
                       {user.nic}
                       </p>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="media">
+                  <div className="col-md-6">
+                    <div className="media">
                       <label>Telephone Number</label>
                       <p>
                       {user.tp_number}
                       </p>
                     </div>
-                    <div class="media">
+                    <div className="media">
                       <label>Password</label>
                       <p>
                         <p>{user.password}</p>
                       </p>
                     </div>
-                    <div class="media">
+                    <div className="media">
                     
                       <p>
                       <Link to={`/UserProfileUpdate/${UserId}`}>
@@ -132,8 +132,8 @@ const UserProfile = () => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="about-avatar">
+            <div className="col-lg-6">
+              <div className="about-avatar">
                 <img
                   src = {`http://localhost:8080/images/${user.image}`}
                   style={{
@@ -149,9 +149,9 @@ const UserProfile = () => {
               </div>
             </div>
           </div>
-          <div class="counter">
-            <div class="row">
-              <h6 class="count h2" data-to="190" data-speed="190">
+          <div className="counter">
+            <div className="row">
+              <h6 className="count h2" data-to="190" data-speed="190">
                 Thank You visit Our Site
               </h6>
             </div>
